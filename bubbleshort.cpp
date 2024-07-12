@@ -10,6 +10,7 @@ int main()
  {
      cout<<a[i]<<"\n";
  }
+
  //apply bubble sort
  for(int i=0;i<s;i++)
  {
@@ -23,13 +24,16 @@ int main()
              c++;
          }
      }
+
      if(c==0)
      {
          cout<<"Data is Already sorted\n";
          break;
      }
  }
+
  cout<<"After Bubble Sort\n";
+ 
  for(int i=0;i<s;i++)
  {
      cout<<a[i]<<"\n";
