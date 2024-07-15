@@ -9,6 +9,7 @@ int main()
   cout<<a[c]<<"\t";
  }
  cout<<"\nAfter Appling insertion sort\n";
+
  for(int i=1;i<s;i++)
  {
    int mini=i;
@@ -23,6 +24,7 @@ int main()
        mini--;
    }
  }
+ 
  for(int i=0;i<s;i++)
  {
      cout<<a[i]<<"\t";
