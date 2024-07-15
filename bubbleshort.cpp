@@ -37,14 +37,6 @@ int main()
  for(int i=0;i<s;i++)
  {
      cout<<a[i]<<"\n";
-     if(c==0)
-     {
-         cout<<"Data is Already sorted\n";
-         break;
-     }
-     else{
-        cout<<"\n"<<c<<"\n";
-     }
  }
  cout<<"\ncounter hit="<<c;
 
