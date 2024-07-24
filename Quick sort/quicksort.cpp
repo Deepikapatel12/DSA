@@ -1,6 +1,13 @@
 #include<iostream>
 using namespace std;
 //select pivot element and left and right
+/* o (n log n)- time complexity
+divide and conquer
+partioning
+recursive function
+best case =n log n
+Average case= n log n
+worst case =o(n)2  */
 int part(int a[],int low, int high)
 {
     int pvt=a[low];
