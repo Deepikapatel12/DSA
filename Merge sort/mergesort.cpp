@@ -16,5 +16,5 @@ void print(int a[], int s)
 }
 int main()
 {
-     int a[]=
+     int a[]={2,5,3,1,4};
 }
