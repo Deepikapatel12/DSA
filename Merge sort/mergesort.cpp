@@ -16,5 +16,10 @@ void print(int a[], int s)
 }
 int main()
 {
-     int a[]={2,5,3,1,4};
+     int a[]={4,2,3,1,5};
+     int s=sizeof(a)/sizeof(a[0]);
+     print(a,s);
+     qs(a,0,s-1);
+     cout<<"\n After Merge Sort\n";
+     print(a,s);
 }
