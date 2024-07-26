@@ -1,10 +1,13 @@
 #include<iostream>
 using namespacestd;
-void part(int a[], int low, int high)
+void qs(int a[], int low, int high)
 {
     if(low<high)
     {
-        int mid
+        int mid=(low+high)/2;
+        qs(a,low,mid);
+        qs(a,mid+1,high);
+        mrg(a,low,mid,high);
     }
 }
 void print(int a[], int s)
