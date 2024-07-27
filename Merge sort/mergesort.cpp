@@ -2,6 +2,7 @@
 using namespacestd;
 void mrg(int a[], int low, int mid, int high)
 {
+    // formula of merge sort
     int i=low;
     int j=mid+1;
     int k=low;
