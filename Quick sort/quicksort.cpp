@@ -10,7 +10,7 @@ Average case= n log n
 worst case =o(n)2  */
 int part(int a[],int low, int high)
 {
-    // formula of insertion sort
+    // formula of Quick sort
     int pvt=a[low];
     int l=low+1;
     int r=high;
