@@ -62,6 +62,6 @@ int main()
     int s=sizeof(a)/sizeof(a[0]);
     print (a,s);
     qs (a,0,s-1);
-    cout<<"\n After Quick sort\n";
+    cout<<"\n After Quick Sort\n";
     print(a,s);
 }
