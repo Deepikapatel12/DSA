@@ -10,8 +10,6 @@ int main()
   cout<<arr[i]<<"\t";
  }
  cout<<"\nAfter Appling insertion sort\n";
-
-
     cout<<"\n";
     for(int c=0;c<s;c++)
     {
