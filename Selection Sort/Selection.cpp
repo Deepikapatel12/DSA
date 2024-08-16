@@ -9,16 +9,18 @@ int main()
  {
   cout<<arr[i]<<"\t";
  }
- cout<<"\nAfter Appling insertion sort\n";
+ cout<<"\nAfter Appling selection sort\n";
     cout<<"\n";
     for(int c=0;c<s;c++)
     {
     int chotu=c;
     for(int d=c+1;d<s;d++)
     {
-        chotu=d;
+        if(arr[chotu]>arr[d])
+        {
+            chotu=d;
+        }
     }
-
     if(chotu!=c)
     {
         int tmp=arr[chotu];
