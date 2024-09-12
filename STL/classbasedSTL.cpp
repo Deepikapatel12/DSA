@@ -14,7 +14,6 @@ class student
     void show()
     {
         cout<<"Sum="<<a+b;
-
     }
 };
 int main()
