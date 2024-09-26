@@ -6,22 +6,32 @@
 using  namespace std;
 #include<queue>
 #include<stack>
-void rev(queue<int>&q,int k)
+void firstk(queue<int>&q,int k)
 {
      stack<int>s;
-
-        while (!q.empty())
-            {
+   while(k--)
+    {
         s.push(q.front());
         q.pop();
     }
-     while (!s.empty()) {
-    cout << s.top() << " ";
+     int n=q.size();
+       while (!s.empty()) {
+   // cout << s.top() << " ";
         q.push(s.top());
         s.pop();
     }
+     while(n--)
+    {
+        q.push(q.front());
+        q.pop();
+    }
+      while(!q.empty())
+    {
+        cout<<q.front()<<"\t";
+      //  q.push(q.front());
+        q.pop();
+    }
 }
-
 int main()
 {
     queue<int>q;
@@ -29,21 +39,8 @@ int main()
     q.push(20);
     q.push(30);
     q.push(40);
-     cout<<"\n"<<q.front()<<"\t";
-        q.pop();
+    int k=2;
+    firstk(q,k);
 
-         int n=q.size();
-      //   k==q;
-    while(n--)
-    {
-        cout<<q.front()<<"\t";
-        q.push(q.front());
-        q.pop();
-    }
-    cout<<"\n"<<"After delete";
-     while(!q.empty())
-    {
-        cout<<"\n"<<q.front()<<"\t";
-        q.pop();
-    }
+
 }
