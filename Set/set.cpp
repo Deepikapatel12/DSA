@@ -3,6 +3,8 @@ using namespace std;
 #include<set>
 int main()
 {
+    //single value m km krne k liye set also known as order set
+
    set<int>s;//ascending order
    // set<int,greater<int>>s;//descending order
     s.insert(101);
